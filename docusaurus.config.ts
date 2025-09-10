@@ -63,6 +63,12 @@ const config: Config = {
       items: [
         { label: '博客', position: 'right', to: 'blog' },
         { label: '项目', position: 'right', to: 'project' },
+        {
+          'href': 'https://github.com/li-daqian/blog',
+          'position': 'right',
+          'className': 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
       ],
     },
     footer: {
