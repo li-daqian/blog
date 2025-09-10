@@ -1,6 +1,7 @@
-import { themes as prismThemes } from 'prism-react-renderer'
+import { themes as prismThemes, themes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
+import { GiscusConfig } from './src/components/Comment'
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -69,8 +70,41 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} LiDaqian. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: themes.oneLight,
+      darkTheme: themes.oneDark,
+      additionalLanguages: ['bash', 'json', 'java', 'python', 'php', 'graphql', 'rust', 'toml', 'protobuf', 'diff'],
+      defaultLanguage: 'javascript',
+      magicComments: [
+        {
+          className: 'theme-code-block-highlighted-line',
+          line: 'highlight-next-line',
+          block: { start: 'highlight-start', end: 'highlight-end' },
+        },
+        {
+          className: 'code-block-error-line',
+          line: 'This will error',
+        },
+      ],
+    },
+    giscus: {
+      repo: 'li-daqian/blog',
+      repoId: 'R_kgDOPtbUJA=',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOPtbUJM4CvQEg',
+      theme: 'light',
+      darkTheme: 'dark_dimmed',
+    } satisfies Partial<GiscusConfig>,
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
+    liveCodeBlock: { playgroundPosition: 'top' },
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)',
+      },
     },
   } satisfies Preset.ThemeConfig,
 
