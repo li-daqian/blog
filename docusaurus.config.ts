@@ -81,6 +81,11 @@ const config: Config = {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} LiDaqian. Built with Docusaurus.`,
     },
+    algolia: {
+      appId: 'WS3FZ4DY96',
+      apiKey: '054e882be8a8520d030ee4dddb1a0712',
+      indexName: 'lidaqian website',
+    },
     prism: {
       theme: themes.oneLight,
       darkTheme: themes.oneDark,
