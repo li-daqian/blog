@@ -100,9 +100,9 @@ const config: Config = {
     },
     giscus: {
       repo: 'li-daqian/blog',
-      repoId: 'R_kgDOPtbUJA=',
+      repoId: 'R_kgDOPtbUJA',
       category: 'General',
-      categoryId: 'DIC_kwDOPtbUJM4CvQEg',
+      categoryId: 'DIC_kwDOPtbUJM4CvQEh',
       theme: 'light',
       darkTheme: 'dark_dimmed',
     } satisfies Partial<GiscusConfig>,
