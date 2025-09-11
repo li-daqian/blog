@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import Hero from '@site/src/components/landing/Hero'
 import Particles from '@site/src/components/magicui/particles'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext()
