@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 export type ViewType = 'list' | 'grid'
 
 export function useViewType() {
-  const [viewType, setViewType] = useState<ViewType>('grid')
+  const [viewType, setViewType] = useState<ViewType>('list')
 
   useEffect(() => {
     setViewType((localStorage.getItem('viewType') as ViewType) || 'list')

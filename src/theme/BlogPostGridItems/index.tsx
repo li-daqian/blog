@@ -38,59 +38,59 @@ export default function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.El
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <Link href={item.link} className="hover:no-underline">
-            <AnimatePresence>
-              {hoveredIndex === idx && (
-                <motion.span
-                  className="absolute inset-0 block size-full rounded-lg bg-neutral-100 dark:bg-slate-800/[0.8]"
-                  layoutId="hoverBackground"
-                  initial={{ opacity: 0 }}
-                  animate={{
-                    opacity: 1,
-                    transition: { duration: 0.15 },
-                  }}
-                  exit={{
-                    opacity: 0,
-                    transition: { duration: 0.15, delay: 0.2 },
-                  }}
-                />
-              )}
-            </AnimatePresence>
+          <AnimatePresence>
+            {hoveredIndex === idx && (
+              <motion.span
+                className="absolute inset-0 block size-full rounded-lg bg-neutral-100 dark:bg-slate-800/[0.8]"
+                layoutId="hoverBackground"
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 0.15, delay: 0.2 },
+                }}
+              />
+            )}
+          </AnimatePresence>
 
-            <Card className={cn('relative bg-blog', item.sticky && styles.blogSticky)}>
-              <CardTitle className="transition duration-300 hover:text-primary">{item.title}</CardTitle>
-              <CardFooter className="flex justify-between pt-4">
-                <div
-                  className={cn(styles.blogTags, 'inline-flex items-center gap-1 whitespace-nowrap text-sm text-text')}
-                >
-                  {item.tags?.length > 0 && (
-                    <>
-                      <svg width="1em" height="1em" viewBox="0 0 24 24">
-                        <path
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          d="M10 15h4V9h-4v6Zm0 2v3a1 1 0 0 1-2 0v-3H5a1 1 0 0 1 0-2h3V9H5a1 1 0 1 1 0-2h3V4a1 1 0 1 1 2 0v3h4V4a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2h-3v6h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-4Z"
-                        />
-                      </svg>
-                      {item.tags.slice(0, 2).map(({ label, permalink: tagPermalink, description }, index) => (
-                        <>
-                          {index !== 0 && '/'}
-                          <Tag
-                            label={label}
-                            description={description}
-                            permalink={tagPermalink}
-                            key={tagPermalink}
-                            className="tag"
-                          />
-                        </>
-                      ))}
-                    </>
-                  )}
-                </div>
-                <div className="text-xs text-[var(--ifm-color-emphasis-600)]">{item.date}</div>
-              </CardFooter>
-            </Card>
-          </Link>
+          <Card className={cn('relative bg-blog', item.sticky && styles.blogSticky)}>
+            <CardTitle className="transition duration-300 hover:text-primary">
+              <Link href={item.link} className="hover:no-underline">
+                {item.title}
+              </Link>
+            </CardTitle>
+            <CardFooter className="flex justify-between pt-4">
+              <div
+                className={cn(styles.blogTags, 'inline-flex items-center gap-1 whitespace-nowrap text-sm text-text')}
+              >
+                {item.tags?.length > 0 && (
+                  <>
+                    <svg width="1em" height="1em" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        d="M10 15h4V9h-4v6Zm0 2v3a1 1 0 0 1-2 0v-3H5a1 1 0 0 1 0-2h3V9H5a1 1 0 1 1 0-2h3V4a1 1 0 1 1 2 0v3h4V4a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2h-3v6h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-4Z"
+                      />
+                    </svg>
+                    {item.tags.slice(0, 2).map(({ label, permalink: tagPermalink, description }, index) => [
+                      index !== 0 && <span key={`sep-${tagPermalink}`}>/</span>,
+                      <Tag
+                        label={label}
+                        description={description}
+                        permalink={tagPermalink}
+                        key={tagPermalink}
+                        className="tag"
+                      />,
+                    ])}
+                  </>
+                )}
+              </div>
+              <div className="text-xs text-[var(--ifm-color-emphasis-600)]">{item.date}</div>
+            </CardFooter>
+          </Card>
         </div>
       ))}
     </div>
