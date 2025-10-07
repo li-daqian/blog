@@ -67,8 +67,8 @@ const config: Config = {
       //   src: 'img/logo.svg',
       // },
       items: [
-        { label: '博客', position: 'right', to: 'blog' },
         { label: '项目', position: 'right', to: 'project' },
+        { label: '博客', position: 'right', to: 'blog' },
         {
           'href': 'https://github.com/li-daqian/blog',
           'position': 'right',
