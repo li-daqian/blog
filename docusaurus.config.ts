@@ -6,7 +6,7 @@ import { GiscusConfig } from './src/components/Comment'
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'LiDaqian',
+  title: 'Li Daqian',
   favicon: 'img/favicon.ico',
   tagline: '是一个由李大骞创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
 
@@ -61,7 +61,7 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'LiDaqian',
+      title: 'Li Daqian',
       // logo: {
       //   alt: 'My Site Logo',
       //   src: 'img/logo.svg',
@@ -79,7 +79,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} LiDaqian. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Li Daqian. Built with Docusaurus.`,
     },
     algolia: {
       appId: 'WS3FZ4DY96',
