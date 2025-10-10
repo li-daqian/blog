@@ -42,7 +42,7 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@mdx-js/react':
-        specifier: ^3.1.1
+        specifier: ^3.0.0
         version: 3.1.1(@types/react@19.2.2)(react@19.2.0)
       '@popperjs/core':
         specifier: ^2.11.8
@@ -63,19 +63,19 @@ importers:
         specifier: ^0.7.1
         version: 0.7.1
       clsx:
-        specifier: ^2.1.1
+        specifier: ^2.0.0
         version: 2.1.1
       docusaurus-plugin-image-zoom:
         specifier: ^3.0.1
         version: 3.0.1(@docusaurus/theme-classic@3.9.1(@docusaurus/faster@3.9.1(@docusaurus/types@3.9.1(@swc/core@1.13.5(@swc/helpers@0.5.17))(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(@swc/helpers@0.5.17))(@rspack/core@1.5.8(@swc/helpers@0.5.17))(@swc/core@1.13.5(@swc/helpers@0.5.17))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(typescript@5.6.3))
       framer-motion:
-        specifier: ^12.23.22
+        specifier: ^12.23.12
         version: 12.23.22(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       mini-svg-data-uri:
         specifier: ^1.4.4
         version: 1.4.4
       motion:
-        specifier: ^12.23.22
+        specifier: ^12.23.12
         version: 12.23.22(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       ora:
         specifier: ^8.2.0
@@ -93,13 +93,13 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2(webpack@5.102.0(@swc/core@1.13.5(@swc/helpers@0.5.17)))
       react:
-        specifier: ^19.2.0
+        specifier: ^19.0.0
         version: 19.2.0
       react-dom:
-        specifier: ^19.2.0
+        specifier: ^19.0.0
         version: 19.2.0(react@19.2.0)
       react-github-calendar:
-        specifier: ^4.5.11
+        specifier: ^4.5.9
         version: 4.5.11(react@19.2.0)
       react-icon-cloud:
         specifier: ^4.1.7
@@ -114,7 +114,7 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       tailwindcss:
-        specifier: ^3.4.18
+        specifier: ^3.4.3
         version: 3.4.18(yaml@2.8.1)
     devDependencies:
       '@docusaurus/module-type-aliases':
@@ -127,28 +127,28 @@ importers:
         specifier: 3.9.1
         version: 3.9.1(@swc/core@1.13.5(@swc/helpers@0.5.17))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@iconify/react':
-        specifier: ^6.0.2
+        specifier: ^6.0.1
         version: 6.0.2(react@19.2.0)
       '@stylistic/eslint-plugin':
-        specifier: ^5.4.0
+        specifier: ^5.3.1
         version: 5.4.0(eslint@9.37.0(jiti@1.21.7))
       '@tailwindcss/typography':
-        specifier: ^0.5.19
+        specifier: ^0.5.16
         version: 0.5.19(tailwindcss@3.4.18(yaml@2.8.1))
       '@types/prismjs':
         specifier: ^1.26.5
         version: 1.26.5
       '@types/react':
-        specifier: ^19.2.2
+        specifier: ^19.1.12
         version: 19.2.2
       '@types/react-dom':
-        specifier: ^19.2.1
+        specifier: ^19.1.9
         version: 19.2.1(@types/react@19.2.2)
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.46.0
+        specifier: ^8.42.0
         version: 8.46.0(@typescript-eslint/parser@8.46.0(eslint@9.37.0(jiti@1.21.7))(typescript@5.6.3))(eslint@9.37.0(jiti@1.21.7))(typescript@5.6.3)
       eslint:
-        specifier: ^9.37.0
+        specifier: ^9.34.0
         version: 9.37.0(jiti@1.21.7)
       eslint-plugin-react:
         specifier: ^7.37.5
@@ -157,10 +157,10 @@ importers:
         specifier: ^3.18.2
         version: 3.18.2(tailwindcss@3.4.18(yaml@2.8.1))
       typescript:
-        specifier: ~5.6.3
+        specifier: ~5.6.2
         version: 5.6.3
       typescript-eslint:
-        specifier: ^8.46.0
+        specifier: ^8.42.0
         version: 8.46.0(eslint@9.37.0(jiti@1.21.7))(typescript@5.6.3)
       utility-types:
         specifier: ^3.11.0
