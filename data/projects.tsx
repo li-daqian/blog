@@ -9,6 +9,15 @@ export const projects: Project[] = [
     type: 'web',
   },
   {
+    title: 'Upload to OSS',
+    description: '一个简单的 VS Code 插件，将图片上传到 Cloudflare R2 并自动复制链接到剪贴板。',
+    preview: 'https://img.lidaqian.me/blog/482d06d44a2240889c67b386c9855670.png',
+    website: 'https://marketplace.visualstudio.com/items?itemName=li-daqian.upload-to-oss',
+    source: 'https://github.com/li-daqian/vsc-extension-upload-to-oss',
+    tags: ['opensource', 'personal'],
+    type: 'personal',
+  },
+  {
     title: '配置中心',
     description: '零第三方依赖的简易配置中心',
     website: 'https://github.com/li-daqian/aq-config',
