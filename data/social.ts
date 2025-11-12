@@ -12,7 +12,7 @@ type SocialValue = {
 
 const social: Social = {
   github: 'https://github.com/li-daqian',
-  email: 'mailto:lidaqian11@gmail.com',
+  email: 'mailto:hi@lidaqian.me',
 }
 
 const socialSet: Record<keyof Social, SocialValue> = {
