@@ -105,6 +105,11 @@ const config: Config = {
           className: 'code-block-error-line',
           line: 'This will error',
         },
+        {
+          className: 'code-block-add-line',
+          line: 'add-line',
+          block: { start: 'add-start', end: 'add-end' },
+        },
       ],
     },
     giscus: {
