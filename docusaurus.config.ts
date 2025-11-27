@@ -97,11 +97,6 @@ const config: Config = {
       defaultLanguage: 'javascript',
       magicComments: [
         {
-          className: 'theme-code-block-highlighted-line',
-          line: 'highlight-next-line',
-          block: { start: 'highlight-start', end: 'highlight-end' },
-        },
-        {
           className: 'code-block-error-line',
           line: 'This will error',
         },
@@ -109,6 +104,21 @@ const config: Config = {
           className: 'code-block-add-line',
           line: 'add-line',
           block: { start: 'add-start', end: 'add-end' },
+        },
+        {
+          className: 'code-block-delete-line',
+          line: 'delete-line',
+          block: { start: 'delete-start', end: 'delete-end' },
+        },
+        {
+          className: 'code-block-edit-line',
+          line: 'edit-line',
+          block: { start: 'edit-start', end: 'edit-end' },
+        },
+        {
+          className: 'theme-code-block-highlighted-line',
+          line: 'highlight-next-line',
+          block: { start: 'highlight-start', end: 'highlight-end' },
         },
       ],
     },

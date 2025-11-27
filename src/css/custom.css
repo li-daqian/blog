@@ -253,7 +253,6 @@ div[class^='announcementBar_'] {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-  border-left: 3px solid rgb(16, 185, 129);
   position: relative;
 }
 
@@ -267,6 +266,48 @@ div[class^='announcementBar_'] {
 
 html[data-theme='dark'] .code-block-add-line {
   background-color: rgba(16, 185, 129, 0.1);
+}
+
+.code-block-delete-line {
+  background-color: rgba(239, 68, 68, 0.15);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  position: relative;
+}
+
+.code-block-delete-line::before {
+  content: '-';
+  position: absolute;
+  left: 0.5rem;
+  color: rgb(239, 68, 68);
+  font-weight: bold;
+}
+
+html[data-theme='dark'] .code-block-delete-line {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.code-block-edit-line {
+  background-color: rgba(59, 130, 246, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  position: relative;
+}
+
+.code-block-edit-line::before {
+  content: '✎';
+  position: absolute;
+  left: 0.5rem;
+}
+
+html[data-theme='dark'] .code-block-edit-line {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+html[data-theme='dark'] .code-block-edit-line {
+  background-color: rgba(59, 130, 246, 0.1);
 }
 
 /* Code block with file title styling */
