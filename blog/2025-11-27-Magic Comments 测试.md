@@ -49,6 +49,8 @@ console.log('这行会被高亮');
 console.log('普通行');
 ```
 
+## error
+
 ```js title="error-example.js"
 console.log('Hello World')
 // This will error
