@@ -97,21 +97,21 @@ const config: Config = {
       defaultLanguage: 'javascript',
       magicComments: [
         {
-          className: 'code-block-error-line',
+          className: 'theme-code-block-error-line',
           line: 'This will error',
         },
         {
-          className: 'code-block-add-line',
+          className: 'theme-code-block-add-line',
           line: 'add-line',
           block: { start: 'add-start', end: 'add-end' },
         },
         {
-          className: 'code-block-delete-line',
+          className: 'theme-code-block-delete-line',
           line: 'delete-line',
           block: { start: 'delete-start', end: 'delete-end' },
         },
         {
-          className: 'code-block-edit-line',
+          className: 'theme-code-block-edit-line',
           line: 'edit-line',
           block: { start: 'edit-start', end: 'edit-end' },
         },
