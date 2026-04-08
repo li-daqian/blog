@@ -64,6 +64,9 @@ const config: Config = {
         hideable: true,
       },
     },
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'Li Daqian',
       // logo: {
