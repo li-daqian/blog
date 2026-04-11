@@ -9,6 +9,15 @@ export const projects: Project[] = [
     type: 'web',
   },
   {
+    title: '后台管理系统',
+    description: '基于 Vue3 和 Shadcn UI 实现的后台管理系统，包含权限管理、数据可视化等功能。',
+    preview: 'https://img.lidaqian.me/blog/8775acdc617f4672a72daa291c6e15f3.png',
+    website: 'https://admin.lidaqian.me',
+    source: 'https://github.com/li-daqian/hono-vite-admin',
+    tags: ['opensource', 'personal'],
+    type: 'web',
+  },
+  {
     title: 'Upload to OSS',
     description: '一个简单的 VS Code 插件，将图片上传到 Cloudflare R2 并自动复制链接到剪贴板。',
     preview: 'https://img.lidaqian.me/blog/482d06d44a2240889c67b386c9855670.png',
