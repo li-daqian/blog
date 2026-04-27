@@ -1,10 +1,17 @@
 {
   // This file is not used in compilation. It is here just for a nice editor experience.
   "$schema": "https://json.schemastore.org/tsconfig.json",
-  "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "target": "ES2022",
     "lib": ["DOM", "ESNext"],
-    "baseUrl": ".",
+    "module": "ESNext",
+    "noEmit": true,
+    "paths": {
+      "@site/*": ["./*"]
+    },
     "resolveJsonModule": true,
     "allowUnreachableCode": false,
     "exactOptionalPropertyTypes": false,
