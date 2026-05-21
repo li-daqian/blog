@@ -59,9 +59,15 @@ export default function Hero() {
       <div className={styles.intro}>
         <Name />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
-          在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。
+          我是一名拥有 10 年经验的 Java 开发者，目前主要在做 AI Agent
+          相关方向，关注智能应用落地、工程化能力以及复杂系统在真实业务中的可用性。
         </motion.p>
-        <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
+        <motion.p custom={3} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
+          过去也长期使用 Kotlin、TypeScript / JavaScript、Go、Rust
+          等多种语言。接下来我想继续往全栈方向深入，逐步走向能够独立交付产品的
+          Freelancer。这些博客会记录我的技术实践、踩坑复盘与产品探索。
+        </motion.p>
+        <motion.div custom={4} initial="hidden" animate="visible" variants={variants}>
           <SocialLinks />
         </motion.div>
       </div>

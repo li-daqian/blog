@@ -8,7 +8,7 @@ import { GiscusConfig } from './src/components/Comment'
 const config: Config = {
   title: 'Li Daqian',
   favicon: 'img/favicon.ico',
-  tagline: '是一个由李大骞创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
+  tagline: '10 年 Java 开发者，当前专注 AI Agent 与工程落地，持续记录多语言实践、全栈探索与独立开发之路。',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
