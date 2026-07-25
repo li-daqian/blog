@@ -18,6 +18,15 @@ export const projects: Project[] = [
     type: 'web',
   },
   {
+    title: 'Local Config Sync',
+    description: '面向开发者的跨 IDE 本地配置同步工具，避免本地配置进入业务仓库并支持跨设备同步。',
+    preview: 'https://img.lidaqian.me/blog/2b27a103fdf447178d8bf70a6f9e094a.png',
+    website: 'https://github.com/li-daqian/local-config-sync',
+    source: 'https://github.com/li-daqian/local-config-sync',
+    tags: ['opensource', 'personal'],
+    type: 'app',
+  },
+  {
     title: 'Upload to OSS',
     description: '一个简单的 VS Code 插件，将图片上传到 Cloudflare R2 并自动复制链接到剪贴板。',
     preview: 'https://img.lidaqian.me/blog/482d06d44a2240889c67b386c9855670.png',
