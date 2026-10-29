@@ -64,8 +64,7 @@ export default function Hero() {
         </motion.p>
         <motion.p custom={3} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
           过去也长期使用 Kotlin、TypeScript / JavaScript、Go、Rust
-          等多种语言。接下来我想继续往全栈方向深入，逐步走向能够独立交付产品的
-          Freelancer。这些博客会记录我的技术实践、踩坑复盘与产品探索。
+          等多种语言。这些博客会记录我的技术实践、踩坑复盘与产品探索。
         </motion.p>
         <motion.div custom={4} initial="hidden" animate="visible" variants={variants}>
           <SocialLinks />
